@@ -1,0 +1,24 @@
+Material: Cuero Vacuno Descarne
+Actividad: Moda
+Familia: Core
+Características Técnicas:
+Horma clásica.
+Sistema de atado de cordones.
+Exterior en cuero sintético.
+Forro interno sintético.
+Las 3 Tiras perforadas.
+Plantilla Cloudfoam Comfort para mayor comodidad.
+Suela tipo cupsole de caucho.
+Color del artículo: Cloud White / Cloud White / Crew Navy.
+Número de artículo: FY8807.
+
+
+$13.999
+
+
+
+margin: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;

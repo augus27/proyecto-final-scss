@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(225, 238, 238, 0.082);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image:url(./img/fondo2.png);
+    background-size: 100%;
+    
+}
+.contenedor{
+    width: 90%;
+    /* max-width: 1000px; */
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px
+    grid-template-columns repeat (3,1fr);
+    grid-template-rows: repeat (5,auto);
+    grid-template-areas:
+    "encabezado encabezado encabezado"
+    "conteiner conteiner conteiner"
+    "fotos fotos publicidad"
+    "fotos fotos publicidad"
+    "footer footer footer"
+}
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .publicidad,
+.contenedor .footer{
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+ }
+.contenedor .encabezado{
+    font-family: 'Crete Round', serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: encabezado;
+}
+.contenedor .menu{
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.623);
+    font-family: 'Crete Round', serif;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    grid-area: menu;
+}
+.contenedor .fotos{
+    display: flex;
+    grid-area: fotos;
+}
+.contenedor .publicidad{
+    grid-column: 3/4;
+    background: #faa43d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: publicidad;
+}
+.contenedor .footer{
+    background: #12203e;
+    color: #fff;
+    display: flex;
+    grid-area: footer;
+}
+ header ul {
+     display: flex;
+     align-items: baseline;
+     flex-direction: row; 
+ }
+ .registro{
+ align-self: center;
+ }
+/* nav{
+    background-color:rgba(255, 255, 255, 0.623);
+    font-family: 'Crete Round', serif;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; 
+} */
+ul{
+    align-items: flex-end;
+    list-style: none;
+    padding: 2rem;
+}
+li{
+display: inline-block;
+position: relative;
+font-size: 1.5rem;
+margin: 10px 20px;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul li{
+    display: block;
+}
+ul ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul ul li{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(0, 4, 255);
+}
+ul li:hover ul{
+    display: block;
+    background-color: rgba(241, 240, 241, 0.76);
+}
+ul ul li:hover ul{
+    display: block;
+    background-color: rgb(205, 199, 211);
+}
+.fotos{
+    display: flex;
+    flex-direction: column;
+}
+.fotos h2{
+    font-family: 'Quando', serif;
+    text-align: center;
+    padding: 2rem;
+    color: #000000;
+}
+.card{
+width: 25rem;
+transition: all 1s;
+/* background-color: rgb(17, 132, 199); */
+border-radius: 1.5rem;
+}
+.card :hover{ 
+box-shadow: 11px 6px 12px 2px rgba(0,0,0,0.71);
+-webkit-box-shadow: 11px 6px 12px 2px rgba(0,0,0,0.71);
+-moz-box-shadow: 11px 6px 12px 2px rgba(0,0,0,0.71);
+}
+.card img{
+    width: 25rem;
+}
+.nombre{
+    font-family: 'Quando', serif;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(19, 18, 18);
+}
+.fotos-zapatillas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+@media screen and (max-width: 650px){
+    .contenedor{
+        grid-template-areas: 
+        "encabezado encabezado encabezado"
+        "menu menu menu"
+        "fotos fotos fotos"
+        "publicidad publicidad publicidad"
+        "footer footer footer";
+    }
+ }

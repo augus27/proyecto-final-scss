@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png">
+    <title>Sr.Benjamin</title>
+</head>
+<body>
+    <header>
+        <h1>registrace</h1>
+    </header>
+    <main>
+        <fieldset><legend>Datos Personales</legend>
+            <form action="#">
+                <div>
+                    <label for="nombre">Completa con tu nombre</label>
+                    <input type="text" name="nombre" placeholder="Juan Carlos">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="apellido">Completa con tu apellido</label>
+                    <input type="text" name="apellido" placeholder="Gonzalo">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="Numero de DNI">Numero de DNI</label>
+                    <input type="text" name="N° DNI" >
+                    <br><br>
+                </div>
+                <div>
+                    <label for="email">Escribe tu mail</label>
+                    <input type="email" name="email" required placeholder="juan_gonzalo@gmail.com">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="email">Confirmar tu mail</label>
+                    <input type="email" name="email" required placeholder="juan_gonzalo@gmail.com">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="pais">Selecciona tu país de origen</label>
+                    <select name="pais" id="">
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="brasil">Brasil</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div>
+                    <label for="genero">Género</label>
+                    <input type="radio" name="genero" value="Mujer">Mujer
+                    <input type="radio" name="genero" value="hombre">Hombre
+                    <input type="radio" name="genero" value="otro">Otro
+                    <br><br>
+                </div>
+                <div>
+                    <label for="N de telefono">Teléfono (cod. área + número)</label>
+                    <input type="number" name="number" required placeholder="1168497526">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" minlength="6" maxlength="10">
+                    <br><br>
+                </div>
+                    <label for="password">Confirmar Password</label>
+                    <input type="password" name="password" minlength="6" maxlength="10">
+                    <br><br>
+                <div>
+                    <input type="submit" value="enviar datos">
+                    <br><br>
+                </div>
+                <div>
+                    <input type="reset" value="borrar campos"></div>
+            </form>
+        </fieldset>
+        <hr>
+    </main>
+    <footer>
+    </footer>
+    
+</body>
+</html>
